@@ -1,0 +1,23 @@
+footer{
+    height: 100vh;
+    width: 100%;
+    background-color: #283E51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.footer__contact_us--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer__contact_us--container>:first-child{
+    font-family: "Gilroy-Light";
+    font-weight: 200;
+    font-size: 26px;
+}
+.footer__contact_us{
+
+}

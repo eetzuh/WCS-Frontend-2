@@ -1,0 +1,30 @@
+.introduction__container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction__container h1{
+    font-family: 'Butler-Regular';
+    font-size: 100px;
+    font-weight:500;
+    color: #283E51;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.introduction__container img{
+    width: 90%;
+}
+.introduction__text{
+    margin-top: 70px;
+    width: 85%;
+}
+.introduction__text p{
+    font-family: "Gilroy-Regular";
+    font-size: 20px;
+    color: #283E51;
+    opacity: 80%;
+
+}

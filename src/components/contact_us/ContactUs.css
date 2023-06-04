@@ -1,0 +1,42 @@
+.contact_us{
+    height: 259px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #283E51;
+    box-sizing: border-box;
+    position: relative;
+}
+.contact_us h3{
+    font-family: "Butler-Light";
+    font-size: 72px;
+    font-weight: 100;
+    margin: 0;
+}
+.contact_us p{
+    font-family: "Gilroy-Light";
+    font-weight: 200;
+    font-size: 22px;
+    opacity: 80%;
+    margin: 0;
+}
+.contact_us button{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    height: 80px;
+    font-family: "Gilroy-Bold";
+    font-size: 36px;
+    color: white;
+    margin-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.contact_us img{
+    position: absolute;
+    bottom:-81px;
+    right: 210px;
+}

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("../public/fonts/Gilroy-Regular.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("../public/fonts/Gilroy-Bold.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url("../public/fonts/Gilroy-Light.woff");
+}
+
+@font-face {
+    font-family: "Butler-Regular";
+    src: url("../public/fonts/Butler_Regular.woff");
+}
+
+@font-face {
+    font-family: "Butler-Light";
+    src: url("../public/fonts/Butler_Light.woff");
+}
+
+@font-face {
+    font-family: "Rockness-Regular";
+    src: url("../public/fonts/Rockness.woff");
+}
+
+
+.introduction{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.see_more{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
