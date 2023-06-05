@@ -1,5 +1,8 @@
 .contact_us{
-    height: 259px;
+    height: 17vw;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12,31 +15,97 @@
 }
 .contact_us h3{
     font-family: "Butler-Light";
-    font-size: 72px;
+    font-size: 4vw;
     font-weight: 100;
     margin: 0;
 }
 .contact_us p{
     font-family: "Gilroy-Light";
     font-weight: 200;
-    font-size: 22px;
+    font-size: 1.3vw;
     opacity: 80%;
     margin: 0;
 }
 .contact_us button{
+    width: 15%;
     background-color: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 8px;
-    height: 80px;
     font-family: "Gilroy-Bold";
-    font-size: 36px;
+    font-size: 2vw;
     color: white;
-    margin-top: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-top: 3%;
+    padding: 1%
 }
 .contact_us img{
     position: absolute;
-    bottom:-81px;
-    right: 210px;
+    bottom:-5.1vw;
+    left: 64%;
+    height: 26vw;
 }
+@media only screen and (max-width: 1416px) {
+    .contact_us{
+        height: 260px;
+    }
+    .contact_us img{
+        bottom:-6.7vw;
+        height: 34vw;
+    }
+    .contact_us h3{
+        font-size: 4.6vw;
+    }
+    .contact_us p{
+        font-size: 2vw;
+    }
+  }
+@media only screen and (max-width: 1110px) {
+    .contact_us img{
+        bottom:-7.7vw;
+        height: 39vw;
+    }
+  }
+  @media only screen and (max-width: 955px) {
+    .contact_us img{
+        bottom:-8.3vw;
+        height: 42vw;
+    }
+    .contact_us{
+        height: 210px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .contact_us{
+        height: 25vw;
+    }
+    .contact_us h3{
+        font-size: 5vw;
+    }
+    .contact_us p{
+        font-size: 2.4vw;
+    }
+    .contact_us button{
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        padding: 10px;
+    }
+  }
+  @media only screen and (max-width: 560px) {
+    .contact_us{
+        height: 200px;
+    }
+    .contact_us img{
+        display: none;
+    }
+    .contact_us h3{
+        font-size: 36px;
+    }
+    .contact_us p{
+        font-size: 20px;
+    }
+    .contact_us button{
+       margin-top: 25px;
+    }
+  }
+
+

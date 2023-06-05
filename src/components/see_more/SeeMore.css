@@ -5,17 +5,18 @@
     justify-content: center;
     width: 100%;
     gap: 30px;
+    margin-bottom: 7%;
 }
 .see_more__card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
-    width: 20%;
-    height: auto;
+    width: 20vw;
+    height: 20vw;
     aspect-ratio: 1;
-    padding: 2%;
+    padding: 50px 2% 50px 2%;
     box-shadow: 0px 0px 50px #67859E26;
     border-radius: 24px;
     color: #283E51;
@@ -23,8 +24,14 @@
 }
 .see_more__card img{
     width: 100%;
-
-    margin-bottom: 20%;
+}
+.see_more__card--title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 18%;
 }
 .see_more__card h5{
     font-family: "Gilroy-Bold";
@@ -37,6 +44,44 @@
     font-size: 72px;
     font-weight: 200;
     color: #283E51;
-    margin-top: 90px;
     margin-bottom: 70px;
+}
+@media only screen and (max-width: 1740px) {
+    .see_more__card {
+      width: 25vw;
+      height: 25vw;
+    }
+    .see_more__card h5{
+        font-size: 2.5vw;
+    }
+  }
+  @media only screen and (max-width: 1110px) {
+    .see_more__cards--container {
+      flex-direction: column;
+    }
+    .see_more__card {
+        width: 50vw;
+        height: 50vw;
+      }
+      .see_more__card h5{
+          font-size: 5vw;
+      }
+      .see_more h2{
+        font-size: 7vw;
+        margin-bottom: 50px;
+        margin-top: 70px;
+    }
+    .see_more__card--title{
+        margin-top: 12%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .see_more__card {
+        width: 60vw;
+        height: 60vw;
+      } 
+      .see_more h2{
+        font-size: 8vw;
+        margin: 8%;
+    }
 }

@@ -8,7 +8,9 @@ const MoreCards = ({text}) => {
             text.map((text, index) => {
                 return <div className="see_more__card"> 
                     <img src={CardImage} alt="" />
-                    <h5 key={index}>{text}</h5>
+                    <div className="see_more__card--title">
+                        <h5 key={index}>{text}</h5>
+                    </div>
                     </div>
             })
            }

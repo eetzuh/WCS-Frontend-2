@@ -11,14 +11,16 @@ function App() {
  
   return (
     <>
-      <Navigation/>
+      <div className='navigation'>
+        <Navigation/>
+      </div>
       <div className='introduction'>
         <Introduction/>
       </div>
       <div className='products'>
         <Products/>
       </div>
-      <ContactUs/>
+        <ContactUs/>
       <div className='see_more'>
         <SeeMore/>
       </div>
