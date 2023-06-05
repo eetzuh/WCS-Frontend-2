@@ -7,13 +7,15 @@ const ProductCards = () => {
         <>
             <div className="products__card">
                 <h5>Via</h5>
+                <hr/>
                 <p>Business travel automatization software.</p>
-                <img src={CardImgLeft}/>
+                <img src={CardImgLeft} alt='via'/>
             </div>
             <div className="products__card">
                 <h5>Shift</h5>
-                    <p>Central base of transfered mobile and fixed numbers.</p>
-                    <img src={CardImgRight}/>
+                <hr />
+                <p>Central base of transfered mobile and fixed numbers.</p>
+                <img src={CardImgRight} alt='shift'/>
             </div>
         </>
     )

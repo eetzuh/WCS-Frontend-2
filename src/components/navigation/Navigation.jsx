@@ -7,7 +7,7 @@ import HamburgerMenu from '../../images/burger-menu-svgrepo-com (1).svg';
 const Navigation = () => {
     return(
         <div className='navigation__container'>
-            <img src={amplitudoLogo}></img>
+            <img src={amplitudoLogo} alt='logo'></img>
             <Links/>
             <img className="navigation__mobile" src={HamburgerMenu} alt="menu" />
         </div>

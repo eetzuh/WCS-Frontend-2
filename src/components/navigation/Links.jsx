@@ -5,7 +5,7 @@ const Links = () => {
             <>
             <div className="navigation__links">
                 <a>Home</a>
-                <a href="index.html">Services</a>
+                <a className="links__services" href="index.html">Services</a>
                 <a>StartUp</a>
                 <a>Career</a>
                 <a>Company</a>
