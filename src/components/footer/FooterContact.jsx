@@ -1,12 +1,12 @@
 import React from "react";
 import Logo from "../../images/Group 386 (1).svg";
-import "./Footer.css";
+import styles from "./Footer.module.scss";
 
 const FooterContact = () => {
     return(
           <>
-            <img class="footer__logo" src={Logo} alt="logo"/>
-            <div class="footer__info">
+            <img class={styles.logo__name} src={Logo} alt="logo"/>
+            <div class={styles.info}>
                 <p>Boulevard of St. Petar Cetinjski 56</p>
                 <p>Podgorica, Montenegro</p>
                 <hr/>

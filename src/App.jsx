@@ -5,23 +5,23 @@ import ContactUs from './components/contact_us/ContactUs'
 import SeeMore from './components/see_more/SeeMore'
 import Footer from './components/footer/Footer'
 
-import './App.css'
+import styles from './App.module.scss'
 
 function App() {
  
   return (
     <>
-      <div className='navigation'>
+      <div className={styles.navigation}>
         <Navigation/>
       </div>
-      <div className='introduction'>
+      <div className={styles.introduction}>
         <Introduction/>
       </div>
-      <div className='products'>
+      <div className={styles.products}>
         <Products/>
       </div>
         <ContactUs/>
-      <div className='see_more'>
+      <div className={styles.see_more}>
         <SeeMore/>
       </div>
       <Footer/>

@@ -1,0 +1,249 @@
+footer {
+  height: 1150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 1%;
+  background-color: #283e51;
+  color: white;
+  z-index: -2;
+  overflow-x: hidden;
+
+  .services {
+    font-family: "Gilroy-Light";
+    font-weight: 200;
+    font-size: 26px;
+  }
+  .arrow{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    img {
+      width: 320px !important;
+      margin-left: 35px;
+    }
+    p {
+      position: absolute;
+      margin-bottom: 60px;
+      font-family: "Gilroy-Bold";
+      font-size: 50px;
+    }
+  }
+  .map {
+    height: 700px;
+    position: absolute;
+    top: 21%;
+    margin-left: 50px;
+  }
+  .message {
+    width: 470px;
+    height: 65px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 11px 14px 11px 14px;
+    margin-top: 160px;
+    border-radius: 8px;
+    font-family: "Gilroy-Regular";
+    font-size: 22px;
+    color: #283e51;
+    background-color: white;
+    z-index: 2;
+  
+    p {
+      opacity: 80%;
+      margin-left: 20px;
+      margin-right: 10px;
+      z-index: 3;
+    }
+    .logo{
+      height: 40px;
+    }
+    .emoji{
+      height: 25px;
+    }
+  }
+  .point {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    top: -54px;
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    background-color: white;
+    z-index: -1;
+  }
+  .dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.185);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+  }
+  .dot::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    position: absolute;
+  }
+  .logo__name {
+    margin-top: 150px;
+  }
+  .info {
+    width: 350px;
+    font-family: "Gilroy-UltraLight";
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    p {
+      margin: 10px;
+    }
+    hr {
+      width: 130px;
+      border: none;
+      border-top: 1px solid white;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    font-family: "Gilroy-UltraLight";
+    font-size: 20px;
+    color: white;
+    .icons {
+      display: flex;
+      gap: 12px;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+  .copyright {
+    position: absolute;
+    bottom: 0px;
+    font-family: "Gilroy-UltraLight";
+    color: white;
+    opacity: 50%;
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 1445px) {
+  footer {
+    height: 830px;
+    .map {
+      top: 180px;
+      width: 1100px;
+      height: auto;
+      margin-right: 15px;
+    }
+    .services {
+      font-size: 20px;
+    }
+    .arrow {
+      margin-top: 20px;
+      img {
+        margin-left: 28px;
+        width: 230px !important;
+      }
+      p {
+        font-size: 35px;
+        margin-bottom: 40px;
+      }
+    }
+    .message {
+      width: 370px;
+      height: 50px;
+      display: flex;
+      margin-top: 105px;
+      font-size: 15px;
+      p{
+        margin-right: 20px;
+      }
+    }
+    .point {
+      top: -28px;
+      width: 30px;
+      height: 30px;
+    }
+    .dot {
+      width: 20px;
+      height: 20px;
+      margin-top: -15px;
+    }
+    .dot::before {
+      width: 10px;
+      height: 10px;
+    }
+    .logo__name {
+      margin-top: 110px;
+      width: 220px;
+    }
+    .info {
+      font-size: 15px;
+      margin-top: 20px;
+      p {
+        margin: 5px;
+      }
+      hr {
+        width: 90px;
+        border: none;
+        border-top: 1px solid white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+    .socials {
+      margin-top: 45px;
+      font-size: 15px;
+      .icons {
+        display: flex;
+        gap: 8px;
+        img {
+          cursor: pointer;
+          width: 32px;
+        }
+      }
+    }
+    .copyright {
+      font-size: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer{
+    .message {
+      width: 300px;
+      text-align: center;
+      img{
+         height: 30px;
+       }
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  footer{
+    .message {
+      width: 270px;
+      text-align: center;
+    }
+  }
+}

@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "./Footer.module.scss";
 
 const FooterSocials = ({socials}) => {
     return(
           <>
-             <div class="footer__socials">
+             <div class={styles.socials}>
                 <p>Follow us on social media</p>
-                <div class="footer__icons">
+                <div class={styles.icons}>
                     {
                     socials.map((icon, index)=>{
                         return (

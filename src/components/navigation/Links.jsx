@@ -1,17 +1,18 @@
 import React from "react";
+import styles from "./Navigation.module.scss";
 
 const Links = () => {
         return(
             <>
-            <div className="navigation__links">
+            <div className={styles.links}>
                 <a>Home</a>
-                <a className="links__services" href="index.html">Services</a>
+                <a className={styles.link__services} href="index.html">Services</a>
                 <a>StartUp</a>
                 <a>Career</a>
                 <a>Company</a>
                 <a>Blog</a>
-                <div class="navigation__lang--container">
-                    <a className="navigation__lang"></a>
+                <div className= {styles.lang__container}>
+                    <a className={styles.lang}></a>
                 </div>
             </div>
             </>
