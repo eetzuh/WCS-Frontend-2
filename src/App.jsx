@@ -11,19 +11,11 @@ function App() {
  
   return (
     <>
-      <div className={styles.navigation}>
-        <Navigation/>
-      </div>
-      <div className={styles.introduction}>
-        <Introduction/>
-      </div>
-      <div className={styles.products}>
-        <Products/>
-      </div>
+        <Navigation className={styles.navigation}/>
+        <Introduction className={styles.introduction}/>
+        <Products className={styles.products}/>
         <ContactUs/>
-      <div className={styles.see_more}>
-        <SeeMore/>
-      </div>
+        <SeeMore className={styles.see_more}/>
       <Footer/>
     </>
   )

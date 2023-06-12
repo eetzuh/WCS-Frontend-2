@@ -1,19 +1,25 @@
+@use '../../index.module.scss' as colors;
+
 .navigation__container {
   display: flex;
   align-items: center;
   margin: 3% 9% 3% 9%;
   justify-content: space-between;
-  .mobile{
+
+  .mobile {
     display: none;
   }
+
   .links {
     display: flex;
     align-items: center;
-    .link__services{
-      border-bottom: 3px solid var(--accent-color);
+
+    .link__services {
+      border-bottom: 3px solid colors.$accentColor;
     }
+
     a {
-      color: var(--primary-color);
+      color: #67859E;
       font-family: "Gilroy-Regular";
       margin-left: 30px;
       margin-right: 30px;
@@ -25,9 +31,11 @@
     }
   }
 }
+
 .lang__container {
   margin-left: 5%;
 }
+
 .lang {
   box-sizing: border-box;
   display: flex;
@@ -38,6 +46,7 @@
   border: 1px solid #67859e;
   cursor: pointer;
 }
+
 .lang::before {
   content: "cg";
   padding: 9px 6px 4px 6px;
@@ -45,14 +54,16 @@
   font-size: 16px;
   color: #67859e;
 }
+
 @media only screen and (max-width: 1416px) {
-  .navigation__container{
-    .links{
+  .navigation__container {
+    .links {
       a {
         margin-left: 20px;
         margin-right: 20px;
       }
     }
+
     .lang__container {
       margin-left: 40px;
     }
@@ -60,40 +71,43 @@
 }
 
 @media only screen and (max-width: 1366px) {
-  .navigation__container{
+  .navigation__container {
     .lang__container {
       margin-left: 40px;
     }
   }
 }
+
 @media only screen and (max-width: 1110px) {
-  .navigation__container{
-    .links{
+  .navigation__container {
+    .links {
       a {
         font-size: 15px;
         margin-right: 10px;
         margin-left: 10px;
       }
     }
+
     .lang::before {
       content: "cg";
       font-family: "Gilroy-Regular";
-      padding: 8px 4px 9px 4px;
+      padding: 8px 4px 0px 4px;
       font-size: 15px;
       color: #67859e;
     }
   }
 }
+
 @media only screen and (max-width: 800px) {
-  .navigation__container{
+  .navigation__container {
     .links {
       display: none;
     }
-    .mobile{
+
+    .mobile {
       display: flex;
       height: 30px;
-      
+
     }
   }
 }
-

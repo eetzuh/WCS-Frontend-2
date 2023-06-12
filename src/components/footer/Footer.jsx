@@ -23,7 +23,6 @@ const Footer = () => {
                 <p>contact us</p>
             </div>
             <FooterMessage/>
-            <div className={styles.dot}></div>
             <img className={styles.map} src={Map}/>
             <FooterContact/>
             <FooterSocials socials={socials}/>

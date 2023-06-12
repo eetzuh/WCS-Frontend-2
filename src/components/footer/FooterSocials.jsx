@@ -4,7 +4,7 @@ import styles from "./Footer.module.scss";
 const FooterSocials = ({socials}) => {
     return(
           <>
-             <div class={styles.socials}>
+             <div class={styles.social}>
                 <p>Follow us on social media</p>
                 <div class={styles.icons}>
                     {

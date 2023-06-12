@@ -1,32 +1,35 @@
-.contact_us{
+@use '../../index.module.scss' as colors;
+
+.contact_us {
     height: 17vw;
     width: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #283E51;
+    background-color: colors.$primaryColor;
     box-sizing: border-box;
     position: relative;
-   
-    h3{
+
+    h3 {
         font-family: "Butler-Light";
         font-size: 4vw;
         font-weight: 100;
         margin: 0;
     }
-    p{
+
+    p {
         font-family: "Gilroy-Light";
         font-weight: 200;
         font-size: 1.3vw;
         opacity: 80%;
         margin: 0;
     }
-    button{
+
+    button {
         width: 15%;
         background-color: transparent;
         border: 1px solid #FFFFFF;
@@ -37,76 +40,91 @@
         margin-top: 3%;
         padding: 1%
     }
-    img{
+
+    img {
         position: absolute;
-        bottom:-5.1vw;
+        bottom: -5.1vw;
         left: 64%;
         height: 26vw;
     }
 }
+
 @media only screen and (max-width: 1416px) {
-    .contact_us{
+    .contact_us {
         height: 260px;
-        img{
-            bottom:-6.7vw;
+
+        img {
+            bottom: -6.7vw;
             height: 34vw;
         }
-        h3{
+
+        h3 {
             font-size: 4.6vw;
         }
-        p{
+
+        p {
             font-size: 2vw;
         }
     }
-  }
+}
+
 @media only screen and (max-width: 1110px) {
-    .contact_us img{
-        bottom:-7.7vw;
+    .contact_us img {
+        bottom: -7.7vw;
         height: 39vw;
     }
-  }
-  @media only screen and (max-width: 955px) {
-      .contact_us{
-          height: 210px;
-          img{
-              bottom:-8.3vw;
-              height: 42vw;
-          }
+}
+
+@media only screen and (max-width: 955px) {
+    .contact_us {
+        height: 210px;
+
+        img {
+            bottom: -8.3vw;
+            height: 42vw;
+        }
     }
-  }
-  @media only screen and (max-width: 800px) {
-    .contact_us{
+}
+
+@media only screen and (max-width: 800px) {
+    .contact_us {
         height: 25vw;
-        h3{
+
+        h3 {
             font-size: 5vw;
         }
-        p{
+
+        p {
             font-size: 2.4vw;
         }
-        button{
+
+        button {
             width: 180px;
             height: 50px;
             font-size: 20px;
             padding: 10px;
         }
     }
-  }
-  @media only screen and (max-width: 560px) {
-    .contact_us{
+}
+
+@media only screen and (max-width: 560px) {
+    .contact_us {
         height: 200px;
-        img{
+
+        img {
             display: none;
         }
-        h3{
+
+        h3 {
             font-size: 36px;
         }
-        p{
+
+        p {
             font-size: 20px;
         }
-        button{
-           margin-top: 25px;
+
+        button {
+            margin-top: 25px;
         }
     }
-  }
-
-
+}

@@ -1,3 +1,5 @@
+@use '../../index.module.scss' as colors;
+
 .products__container{
     width: 80%;
     display: flex;
@@ -8,14 +10,14 @@
         margin: 0;
         font-family: "Gilroy-Bold";
         font-size: 46px;
-        color: #283E51;
+        color: colors.$primaryColor;
     }
     .p{
         font-family: "Rockness-Regular";
         font-size: 65px;
         position: absolute;
         top: -50px;
-        color: var(--accent-color);
+        color: colors.$accentColor;
     }
 }
 .cards__container{
@@ -34,12 +36,12 @@
     box-shadow: 0px 0px 50px #67859E26;
     border-radius: 24px;
     width: 40%;
-    color: #283E51;
+    color: colors.$primaryColor;
     box-sizing: border-box;
     padding: 2% 5% 5% 5%;
     hr{
         width: 50px;
-        border: 2px solid var(--accent-color);
+        border: 2px solid colors.$accentColor;
     }
     h5{
         font-family: "Gilroy-Bold";
@@ -68,12 +70,6 @@
     .cards__container {
       flex-direction: column;
       align-items: center;
-      .card{
-          width: 50vw;
-          p{
-             text-align: center;
-          }
-      }
     }
   }
   @media only screen and (max-width: 600px) {

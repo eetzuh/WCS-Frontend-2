@@ -1,3 +1,5 @@
+@use '../../index.module.scss' as colors;
+
 footer {
   height: 1150px;
   width: 100%;
@@ -8,7 +10,7 @@ footer {
   box-sizing: border-box;
   padding: 20px;
   margin-top: 1%;
-  background-color: #283e51;
+  background-color: colors.$primaryColor;
   color: white;
   z-index: -2;
   overflow-x: hidden;
@@ -18,16 +20,19 @@ footer {
     font-weight: 200;
     font-size: 26px;
   }
-  .arrow{
+
+  .arrow {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+
     img {
       width: 320px !important;
       margin-left: 35px;
     }
+
     p {
       position: absolute;
       margin-bottom: 60px;
@@ -35,12 +40,14 @@ footer {
       font-size: 50px;
     }
   }
+
   .map {
     height: 700px;
     position: absolute;
     top: 21%;
     margin-left: 50px;
   }
+
   .message {
     width: 470px;
     height: 65px;
@@ -55,20 +62,23 @@ footer {
     color: #283e51;
     background-color: white;
     z-index: 2;
-  
+
     p {
       opacity: 80%;
       margin-left: 20px;
       margin-right: 10px;
       z-index: 3;
     }
-    .logo{
+
+    .logo {
       height: 40px;
     }
-    .emoji{
+
+    .emoji {
       height: 25px;
     }
   }
+
   .point {
     width: 55px;
     height: 55px;
@@ -78,6 +88,7 @@ footer {
     background-color: white;
     z-index: -1;
   }
+
   .dot {
     width: 25px;
     height: 25px;
@@ -89,17 +100,20 @@ footer {
     justify-content: center;
     margin-top: -30px;
   }
+
   .dot::before {
     content: "";
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background-color: var(--accent-color);
+    background-color: colors.$accentColor;
     position: absolute;
   }
+
   .logo__name {
     margin-top: 150px;
   }
+
   .info {
     width: 350px;
     font-family: "Gilroy-UltraLight";
@@ -107,9 +121,11 @@ footer {
     color: white;
     text-align: center;
     margin-top: 20px;
+
     p {
       margin: 10px;
     }
+
     hr {
       width: 130px;
       border: none;
@@ -118,7 +134,8 @@ footer {
       margin-bottom: 20px;
     }
   }
-  .socials {
+
+  .social {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,14 +143,17 @@ footer {
     font-family: "Gilroy-UltraLight";
     font-size: 20px;
     color: white;
+
     .icons {
       display: flex;
       gap: 12px;
+
       img {
         cursor: pointer;
       }
     }
   }
+
   .copyright {
     position: absolute;
     bottom: 0px;
@@ -148,60 +168,74 @@ footer {
 @media only screen and (max-width: 1445px) {
   footer {
     height: 830px;
+
     .map {
       top: 180px;
       width: 1100px;
       height: auto;
       margin-right: 15px;
     }
+
     .services {
       font-size: 20px;
     }
+
     .arrow {
       margin-top: 20px;
+
       img {
         margin-left: 28px;
         width: 230px !important;
       }
+
       p {
         font-size: 35px;
         margin-bottom: 40px;
       }
     }
+
     .message {
       width: 370px;
       height: 50px;
       display: flex;
       margin-top: 105px;
       font-size: 15px;
-      p{
+
+      p {
         margin-right: 20px;
       }
     }
+
     .point {
       top: -28px;
       width: 30px;
       height: 30px;
     }
+
     .dot {
       width: 20px;
       height: 20px;
       margin-top: -15px;
     }
+
     .dot::before {
       width: 10px;
       height: 10px;
     }
+
     .logo__name {
       margin-top: 110px;
       width: 220px;
     }
+
     .info {
       font-size: 15px;
       margin-top: 20px;
+
       p {
         margin: 5px;
       }
+
       hr {
         width: 90px;
         border: none;
@@ -210,18 +244,22 @@ footer {
         margin-bottom: 15px;
       }
     }
-    .socials {
+
+    .social {
       margin-top: 45px;
       font-size: 15px;
+
       .icons {
         display: flex;
         gap: 8px;
+
         img {
           cursor: pointer;
           width: 32px;
         }
       }
     }
+
     .copyright {
       font-size: 15px;
     }
@@ -229,18 +267,20 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  footer{
+  footer {
     .message {
       width: 300px;
       text-align: center;
-      img{
-         height: 30px;
-       }
+
+      img {
+        height: 30px;
+      }
     }
   }
 }
+
 @media only screen and (max-width: 350px) {
-  footer{
+  footer {
     .message {
       width: 270px;
       text-align: center;
